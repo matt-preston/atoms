@@ -13,11 +13,14 @@ public class AtomCellHandler : MonoBehaviour {
 	public Sprite atom3;
 	public Sprite atom4;
 
+	public int row;
+	public int column;
+
 	public int count = 0;
 
 	// Use this for initialization
 	void Start () {
-	
+		GameManager.instance.RegisterCell (gameObject, row, column);
 	}
 	
 	// Update is called once per frame
